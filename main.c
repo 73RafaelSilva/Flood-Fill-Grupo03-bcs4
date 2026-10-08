@@ -33,7 +33,7 @@ int main() {
         if (opcao == 1) {
             if (strlen(nome) == 0 || startX == -1 || startY == -1) {
                 printf("Erro: Primeiro configure a imagem e as coordenadas.\n");
-            } else if (!loadBMP(&img, nome)) { 
+            } else if (!LoadBMP(&img, nome)) { 
                 printf("Erro: Não foi possível carregar a imagem.\n");
             } else {
                 printf("Iniciando Flood Fill com pilha\n");
