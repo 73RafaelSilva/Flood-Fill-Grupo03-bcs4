@@ -1,8 +1,8 @@
-#ifndef flood_fill.h
-#define flood_fill.h
+#ifndef flood_fill_h
+#define flood_fill_h
 #include "imagem.h"
 
-void floodFillStack(ImagemBMP* img, int startX, int startY, Color newColor);
-void floodFillQueue(ImagemBMP* img, int startX, int startY, Color newColor);
+void floodFillStack(ImagemBMP* img, int startX, int startY, Color NovaCor);
+void floodFillQueue(ImagemBMP* img, int startX, int startY, Color NovaCor);
 
 #endif
