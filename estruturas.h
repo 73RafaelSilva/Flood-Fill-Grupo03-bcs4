@@ -1,5 +1,5 @@
-#ifndef ESTRUTURAS_H
-#define ESTRUTURAS_H
+#ifndef estruturas.h
+#define estruturas.h
 
 typedef struct {
     int x, y;
