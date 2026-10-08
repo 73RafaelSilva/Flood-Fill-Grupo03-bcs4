@@ -1,16 +1,21 @@
-#ifndef imagem.h
-#define imagem.h
+#ifndef imagem_h
+#define imagem_h
 
 typedef struct {
-    unsigned char r, g, b; 
+    unsigned char b, g, r; 
 } Cor;
 
 typedef struct {
     int largura, altura;
-    Color* pixeis; 
+    Cor* pixeis; 
 } ImagemBMP;
 
-int loadBMP(ImageBMP* img, const char* filename);
-int saveBMP(ImageBMP* img, const char* filename);
+int LoadBMP(ImagemBMP* img, const char* NomeArq); 
+int SaveBMP(ImagemBMP* img, const char* NomeArq);
+Cor GetPixel(ImagemBMP* img, int x, int y); 
+void SetPixel(ImagemBMP* img, int x, int y, Cor c); 
+void SalvarPasso(ImagemBMP* img, int passo, const char* prefixo);
+void Limpagem(ImagemBMP* img);
+int VerifCores(Cor c1, Cor c2);
 
 #endif
