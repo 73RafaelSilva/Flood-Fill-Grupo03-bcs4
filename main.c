@@ -12,7 +12,7 @@ int main() {
     int opcao = -1; 
     char nome[256] = ""; 
     int startX = -1, startY = -1; 
-    Cor SubsColor = {255, 0, 255}; 
+    Cor SubsColor = {255, 255, 0}; 
     ImagemBMP img; 
 
     while (opcao != 0) {
