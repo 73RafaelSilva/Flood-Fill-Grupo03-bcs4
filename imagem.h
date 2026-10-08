@@ -15,7 +15,7 @@ int SaveBMP(ImagemBMP* img, const char* NomeArq);
 Cor GetPixel(ImagemBMP* img, int x, int y); 
 void SetPixel(ImagemBMP* img, int x, int y, Cor c); 
 void SalvarPasso(ImagemBMP* img, int passo, const char* prefixo);
-void Limpagem(ImagemBMP* img);
+void Limpeza(ImagemBMP* img);
 int VerifCores(Cor c1, Cor c2);
 
 #endif
